@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Built-By: Catia Sepetauskas
+Build-Jdk: 11.0.10
+Main-Class: nfa019.Main
+Created-By: Maven Integration for Eclipse
+
