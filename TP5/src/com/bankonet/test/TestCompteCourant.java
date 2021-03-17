@@ -6,7 +6,7 @@ public class TestCompteCourant {
 
 	public static void main(String[] args) {
 
-		// tester la construction d’un compte avec un solde négatif
+		// tester la construction d'un compte avec un solde negatif
 		CompteCourant compteCourant1 = new CompteCourant("123", "Eric DUPONT", -120.0, 1000.00);
 
 		CompteCourant compteCourant2 = new CompteCourant("456", "Antonie GOMEZ", 1200.0, 2000.00);

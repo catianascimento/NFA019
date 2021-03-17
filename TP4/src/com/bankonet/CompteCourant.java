@@ -22,12 +22,12 @@ public class CompteCourant {
 
 	public void crediter(double valeur) {
 		this.solde = this.solde + valeur;
-		System.out.println("Montant crédité: " + valeur);
+		System.out.println("Montant credite: " + valeur);
 	}
 
 	public void debiter(double valeur) {
 		this.solde = this.solde - valeur;
-		System.out.println("Montant débité: " + valeur);
+		System.out.println("Montant debite: " + valeur);
 	}
 
 	@Override
@@ -37,7 +37,7 @@ public class CompteCourant {
 	}
 
 	public void imprimer() {
-		System.out.println("========================= Numéro de compte:" + this.numero + "=========================");
+		System.out.println("========================= Numï¿½ro de compte:" + this.numero + "=========================");
 		System.out.println("Nom compte: " + this.intitule);
 		System.out.println("Type compte: " + "Compte Courant");
 		System.out.println("Autorisation de decouvert: " + this.montantDecouvertAutorise);
@@ -78,3 +78,4 @@ public class CompteCourant {
 //	}
 
 }
+

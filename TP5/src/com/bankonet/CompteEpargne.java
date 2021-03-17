@@ -15,7 +15,7 @@ public class CompteEpargne extends Compte {
 	}
 	
 	public void imprimer() {
-		System.out.println("========================= Numéro de compte:" + this.getNumero() + "=========================");
+		System.out.println("========================= Numero de compte:" + this.getNumero() + "=========================");
 		System.out.println("Nom compte: " + this.getIntitule());
 		System.out.println("Type compte: " + "Compte Epargne");
 		System.out.println("Taux interet(%): " + this.tauxInteret);
@@ -26,7 +26,7 @@ public class CompteEpargne extends Compte {
 	@Override
 	public void debiter(double valeur) {
 		super.setSolde(this.getSolde() - valeur);
-		System.out.println("Montant débité: " + valeur);
+		System.out.println("Montant debite: " + valeur);
 	}
 
 	public double getTauxInteret() {

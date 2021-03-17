@@ -25,12 +25,12 @@ public class CompteEpargne {
 
 	public void crediter(double valeur) {
 		this.solde = this.solde + valeur;
-		System.out.println("Montant crédité: " + valeur);
+		System.out.println("Montant credite: " + valeur);
 	}
 
 	public void debiter(double valeur) {
 		this.solde = this.solde - valeur;
-		System.out.println("Montant débité: " + valeur);
+		System.out.println("Montant debite: " + valeur);
 	}
 
 	public String getNumero() {

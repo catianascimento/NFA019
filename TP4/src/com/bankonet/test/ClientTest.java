@@ -1,7 +1,6 @@
 package com.bankonet.test;
 
 import com.bankonet.Client;
-import com.bankonet.Compte;
 import com.bankonet.CompteCourant;
 import com.bankonet.CompteEpargne;
 
@@ -26,23 +25,21 @@ public class ClientTest {
 		Client client3 = new Client("789", "RAMIREZ", "Stephanie", compteCourant3, null);
 		clientTab[2] = client3;
 
-//		for (Client client : clientTab) {
-//			System.out.println(client.toString());
-//			if (client.getCompteCourant() != null)
-//				System.out.println(client.getCompteCourant());
-//			if (client.getCompteEpargne() != null)
-//				System.out.println(client.getCompteEpargne());
-//			System.out.println();
-//		}
+		for (Client client : clientTab) {
+			System.out.println(client.toString());
+			if (client.getCompteCourant() != null)
+				System.out.println(client.getCompteCourant());
+			if (client.getCompteEpargne() != null)
+				System.out.println(client.getCompteEpargne());
+			System.out.println();
+		}
 		
-		//Afficher son avoir global, par appel à la méthodeà calculerAvoirGlobal()
+		//Afficher son avoir global
 		for (Client client : clientTab) {
 			System.out.println(client.toString());
 			System.out.println(client.calculerAvoirGlobal());
-//			System.out.println();
+			System.out.println();
 		}
-		
-		//Exercice 5
-//		Compte nouvelleCompte = new Compte();
 	}
 }
+

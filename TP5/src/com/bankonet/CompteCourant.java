@@ -19,7 +19,7 @@ final public class CompteCourant extends Compte {
 
 	public void imprimer() {
 		System.out.println(
-				"========================= Numéro de compte:" + this.getNumero() + "=========================");
+				"========================= Numero de compte:" + this.getNumero() + "=========================");
 		System.out.println("Nom compte: " + this.getIntitule());
 		System.out.println("Type compte: " + "Compte Courant");
 		System.out.println("Autorisation de decouvert: " + this.montantDecouvertAutorise);
@@ -37,7 +37,7 @@ final public class CompteCourant extends Compte {
 			} else {
 				this.montantDecouvertAutorise -= result;
 				this.setSolde(0);
-				System.out.println("Montant débité: " + valeur);
+				System.out.println("Montant debite: " + valeur);
 			}
 		} else {
 			this.setSolde(this.getSolde() - valeur);
