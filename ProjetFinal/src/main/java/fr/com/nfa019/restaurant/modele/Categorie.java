@@ -1,4 +1,4 @@
-package com.example.nfa019.modele;
+package fr.com.nfa019.restaurant.modele;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

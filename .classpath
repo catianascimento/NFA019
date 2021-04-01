@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="FinalProject/src/main/java"/>
+	<classpathentry kind="src" path="Jeux/src"/>
+	<classpathentry kind="src" path="nfa019/.mvn/wrapper"/>
+	<classpathentry kind="src" path="nfa019/src/main/java"/>
+	<classpathentry kind="src" path="nfa019/src/test/java"/>
+	<classpathentry kind="src" path="SpringProject/.mvn/wrapper"/>
+	<classpathentry kind="src" path="SpringProject/src/main/java"/>
+	<classpathentry kind="src" path="SpringProject/src/test/java"/>
+	<classpathentry kind="lib" path="FinalProject/target/nfa019-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="nfa019/target/nfa019-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="SpringProject/target/forum-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="FinalProject/target/classes"/>
+</classpath>

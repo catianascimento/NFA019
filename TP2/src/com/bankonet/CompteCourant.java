@@ -9,7 +9,7 @@ public class CompteCourant {
 	static private int nbComptesCourants = 0;
 
 	public CompteCourant(String numero, String intitule, double solde, double montantDecouvertAutorise) {
-		new CompteCourant();
+		this();
 		this.numero = numero;
 		this.intitule = intitule;
 		this.solde = solde;

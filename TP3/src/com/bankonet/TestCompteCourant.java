@@ -1,5 +1,7 @@
 package com.bankonet;
 
+import java.util.ArrayList;
+
 public class TestCompteCourant {
 
 	public static void main(String[] args) {
@@ -15,8 +17,15 @@ public class TestCompteCourant {
 		comptes[0] = compteCourant1;
 		comptes[1] = compteCourant2;
 		comptes[2] = compteCourant3;
-
+		
 		comptes[0].imprimer();
+		
+		ArrayList<CompteCourant> lstComptes = new ArrayList<CompteCourant>();
+		lstComptes.add(compteCourant1);
+		lstComptes.add(compteCourant2);
+		lstComptes.add(compteCourant3);
+		
+		lstComptes.forEach(compte -> compte.imprimer());
 
 		int solde = (int) Math.round(comptes[0].getSolde());
 		switch (solde) {
@@ -38,7 +47,7 @@ public class TestCompteCourant {
 
 		System.out.println("\nJAVA 5\n");
 		// version Java 5
-		for (CompteCourant compteCourant : comptes) {
+		for (CompteCourant compteCourant : lstComptes) {
 			System.out.println(compteCourant.toString());
 		}
 	}

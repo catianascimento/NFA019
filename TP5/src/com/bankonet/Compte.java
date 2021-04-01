@@ -15,19 +15,32 @@ public abstract class Compte {
 	public Compte() {
 	}
 
-	public void crediter(double valeur) {
+	public void crediter(double valeur) throws CreditException {
 		this.solde = this.solde + valeur;
 		System.out.println("Montant credite: " + valeur);
 	}
 
-	public void debiter(double valeur) {
+	public void debiter(double valeur) throws DebitException {
 		this.solde = this.solde - valeur;
+		if (valeur > this.solde) {
+			throw new DebitException();
+		}
 		System.out.println("Montant debite: " + valeur);
 	}
 
 	@Override
 	public String toString() {
 		return "Compte [numero=" + numero + ", intitule=" + intitule + ", solde=" + solde + "]";
+	}
+	
+	public void effectuerVirement(Compte compte, Double montant) throws DebitException, CreditException{
+		if(montant>solde) {
+			throw new DebitException();
+		}
+		else {
+			this.debiter(montant);
+			compte.crediter(montant);
+		}
 	}
 
 	public void setSolde(double solde) {

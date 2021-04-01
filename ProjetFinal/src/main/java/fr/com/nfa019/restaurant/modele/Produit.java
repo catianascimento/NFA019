@@ -1,4 +1,4 @@
-package com.example.nfa019.modele;
+package fr.com.nfa019.restaurant.modele;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-@Entity
+@Entity(name = "produits")
 public class Produit {
 
 	@Id
@@ -16,6 +16,10 @@ public class Produit {
 	private Integer dureeDeConservationEnHeures;
 	@ManyToOne
 	private Categorie categorie;
+	
+	public Produit() {
+		
+	}
 
 	@Override
 	public int hashCode() {
@@ -25,11 +29,11 @@ public class Produit {
 		return result;
 	}
 
-	public Produit(String nom, Integer dureeDeConservationEnHeures, Categorie categorie) {
-		this.nom = nom;
-		this.dureeDeConservationEnHeures = dureeDeConservationEnHeures;
-		this.categorie = categorie;
-	}
+//	public Produit(String nom, Integer dureeDeConservationEnHeures, Categorie categorie) {
+//		this.nom = nom;
+//		this.dureeDeConservationEnHeures = dureeDeConservationEnHeures;
+//		this.categorie = categorie;
+//	}
 
 	@Override
 	public boolean equals(Object obj) {
@@ -72,11 +76,11 @@ public class Produit {
 		this.dureeDeConservationEnHeures = dureeDeConservationEnHeures;
 	}
 
-	public Categorie getCategorie() {
-		return categorie;
-	}
-
-	public void setCategorie(Categorie categorie) {
-		this.categorie = categorie;
-	}
+//	public Categorie getCategorie() {
+//		return categorie;
+//	}
+//
+//	public void setCategorie(Categorie categorie) {
+//		this.categorie = categorie;
+//	}
 }

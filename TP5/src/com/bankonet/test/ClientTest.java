@@ -4,6 +4,8 @@ import com.bankonet.Client;
 import com.bankonet.Compte;
 import com.bankonet.CompteCourant;
 import com.bankonet.CompteEpargne;
+import com.bankonet.CreditException;
+import com.bankonet.DebitException;
 
 public class ClientTest {
 	public static void main(String[] args) {
@@ -44,5 +46,13 @@ public class ClientTest {
 		
 		//Exercice 5
 //		Compte nouvelleCompte = new Compte();
+		
+		try {
+			client2.getCompteCourant().effectuerVirement(client3.getCompteCourant(), 10.0);
+		} catch (DebitException e1) {
+			System.out.println(e1.getMessage());
+		} catch (CreditException e2) {
+			System.out.println(e2.getMessage());
+		}
 	}
 }

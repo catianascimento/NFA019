@@ -9,10 +9,16 @@ public class CompteCourant {
 	static private int nbComptesCourants = 0;
 
 	public CompteCourant(String numero, String intitule, double solde, double montantDecouvertAutorise) {
-		new CompteCourant();
+		this();
 		this.numero = numero;
 		this.intitule = intitule;
 		this.solde = solde < 0.0 ? 0.0 : solde;
+//		if (solde < 0) {
+//			System.out.println("Desolée, mais on ne peut créer un compte avec un solde négatif..");
+//			this.solde = 0.0;
+//		} else {
+//			this.solde = solde;
+//		}
 		this.montantDecouvertAutorise = montantDecouvertAutorise;
 	}
 

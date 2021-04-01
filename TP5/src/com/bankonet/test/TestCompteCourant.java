@@ -1,10 +1,11 @@
 package com.bankonet.test;
 
 import com.bankonet.CompteCourant;
+import com.bankonet.CreditException;
 
 public class TestCompteCourant {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws CreditException {
 
 		// tester la construction d'un compte avec un solde negatif
 		CompteCourant compteCourant1 = new CompteCourant("123", "Eric DUPONT", -120.0, 1000.00);
